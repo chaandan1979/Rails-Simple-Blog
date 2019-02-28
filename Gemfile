@@ -5,8 +5,6 @@ ruby '2.5.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.2'
-# Use mysql as the database for Active Record
-gem 'mysql2'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
@@ -38,6 +36,8 @@ gem 'kaminari', '~> 0.17.0'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
+  # Use mysql as the database for Active Record
+  gem 'mysql2'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'faker'
@@ -55,6 +55,10 @@ group :test do
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
 
+end
+
+group :production do
+  gem 'pg', '9.3.3'  
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
