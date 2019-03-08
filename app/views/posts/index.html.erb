@@ -4,6 +4,9 @@
 
 <% @posts.each do |post| %>
 <p>
+	<% if post.image.url(:thumb) %>
+	<%= image_tag post.image.url(:thumb)  %>
+	<% end %>
 	<%= truncate(post.title, length: 30, separator: '') %><br>
 	<%= time_ago post.created_at %>
 </p>

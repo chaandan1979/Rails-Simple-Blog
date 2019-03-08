@@ -1,0 +1,14 @@
+current directory: E:/rubyonrails/ProjectApps/blog/vendor/cache/jruby/2.5.0/gems/bindex-0.5.0/ext/bindex
+C:/jruby-9.2.6.0/bin/jruby.exe -r ./siteconf20190301-2728-136wrwl.rb extconf.rb
+
+current directory: E:/rubyonrails/ProjectApps/blog/vendor/cache/jruby/2.5.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" clean
+'make' is not recognized as an internal or external command,
+operable program or batch file.
+
+current directory: E:/rubyonrails/ProjectApps/blog/vendor/cache/jruby/2.5.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR="
+'make' is not recognized as an internal or external command,
+operable program or batch file.
+
+make failed, exit code 1

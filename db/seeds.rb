@@ -5,7 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-moderator = Moderator.create(fullname: 'Chandan Kumar Patra', username: 'chaandan@example.com', password: 'example')
+moderator = Moderator.create(fullname: 'Chandan Kumar Patra', username: 'chandan@gmail.com', password: 'password')
 
 30.times do
 

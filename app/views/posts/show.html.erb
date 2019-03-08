@@ -4,6 +4,11 @@
 	<%= @post.title %><br>
 	<%= time_ago @post.created_at %>
 </p>
+<% if @post.image.url(:medium) %>
+<p>
+	<%= image_tag @post.image.url(:medium)  %>
+</p>
+	<% end %>
 <p>
 	<%= @post.content %>
 </p>

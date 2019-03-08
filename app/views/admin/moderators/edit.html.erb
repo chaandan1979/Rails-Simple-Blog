@@ -2,7 +2,7 @@
 
 <p><%= render 'validation_errors', object: @moderator %></p>
 
-<%= form_for [:admin, @moderator] do |f| %>
+<%= form_for [:admin, @moderator], html: { multipart: true } do |f| %>
 <P>
 	<%= f.label :fullname%>
 	<%= f.text_field :fullname%>
@@ -14,6 +14,10 @@
 <P>
 	<%= f.label :password%>
 	<%= f.password_field :password%>
+</P>
+<P>
+	<%= f.label :Image%>
+	<%= f.file_field :pimage%>
 </P>
 <P>
 	<%= f.submit %>	

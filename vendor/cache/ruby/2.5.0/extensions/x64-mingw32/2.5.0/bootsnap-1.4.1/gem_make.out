@@ -1,0 +1,16 @@
+current directory: E:/rubyonrails/ProjectApps/blog/vendor/cache/ruby/2.5.0/gems/bootsnap-1.4.1/ext/bootsnap
+E:/rubyonrails/RailsInstaller/Ruby25-x64/bin/ruby.exe -r ./siteconf20190309-8660-18mwr9v.rb extconf.rb
+creating Makefile
+
+current directory: E:/rubyonrails/ProjectApps/blog/vendor/cache/ruby/2.5.0/gems/bootsnap-1.4.1/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: E:/rubyonrails/ProjectApps/blog/vendor/cache/ruby/2.5.0/gems/bootsnap-1.4.1/ext/bootsnap
+make "DESTDIR="
+generating bootsnap-x64-mingw32.def
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.so
+
+current directory: E:/rubyonrails/ProjectApps/blog/vendor/cache/ruby/2.5.0/gems/bootsnap-1.4.1/ext/bootsnap
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bootsnap.so ./.gem.20190309-8660-1mg750u/bootsnap

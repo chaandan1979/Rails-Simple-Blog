@@ -1,5 +1,5 @@
 <p><%= render 'validation_errors', object: @post %></p>
-<%= form_for [:admin, @post] do |f| %>
+<%= form_for [:admin, @post], html: { multipart: true } do |f| %>
  <p>
  	<%= f.label :title %><br>
  	<%= f.text_field :title %>
@@ -8,6 +8,10 @@
  	<%= f.label :content %><br>
  	<%= f.text_field :content %>
  </p>
+ <P>
+	<%= f.label :Image%>
+	<%= f.file_field :image%>
+</P>
  <p>
  	<%= f.label :publish %><br>
  	<%= f.check_box :publish %>

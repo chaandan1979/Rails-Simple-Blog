@@ -9,6 +9,14 @@ class Post < ApplicationRecord
 
  scope :published, -> {where(publish: true).order(id: :desc)}
 
+ has_attached_file :image, styles: {
+    thumb: '80x80#',
+    square: '200x200#',
+    medium: '300x300>'
+  }, default_url: ActionController::Base.helpers.asset_path('cat.jpg')
+
+ validates_attachment_content_type :image, content_type: /\Aimage\/.*\z/
+
  def self.matching_title_or_content search
  	where("title LIKE ? OR content LIKE ?","%#{search}%","%#{search}%")
  end

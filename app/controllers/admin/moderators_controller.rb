@@ -23,6 +23,6 @@ class Admin::ModeratorsController < Admin::ApplicationController
 	private
 
 	def moderator_params
-		params.require(:moderator).permit(:id,:fullname,:username,:password)
+		params.require(:moderator).permit(:id,:fullname,:username,:password,:pimage)
 	end
 end

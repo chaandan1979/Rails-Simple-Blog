@@ -4,6 +4,7 @@
 		<tr>
 			<th>Full Name</th>
 			<th>User Name</th>
+			<th>Profile Pic</th>
 			<th>Created</th>
 			<th>Action</th>
 		</tr>		
@@ -13,6 +14,7 @@
 <% @moderators.each do |moderator| %>
 			<td><%= moderator.fullname %></td>
 			<td><%= moderator.username %></td>
+			<td><%= image_tag moderator.pimage.url(:thumb), alt: moderator.fullname  %></td>
 			<td><%= time_ago(moderator.created_at) %></td>
 			<td><%= link_to 'Edit', edit_admin_moderator_path(moderator) %></td>
 <% end %>
