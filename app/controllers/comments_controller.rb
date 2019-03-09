@@ -11,7 +11,7 @@ class CommentsController < ApplicationController
     	visitor = Visitor.new(visitor_comments_params)
     end
 
-  	if visitor.save
+  	if verify_recaptcha(model: visitor) && visitor.save
   		flash[:notice] = "Successfully created new comment"
   	else
   		flash[:alert] = "there was a problem creating your comment"
