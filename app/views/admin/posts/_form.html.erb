@@ -6,7 +6,7 @@
  </p>
  <p>
  	<%= f.label :content %><br>
- 	<%= f.text_field :content %>
+ 	<%= f.text_area :content, id: "wysiwyg" %>
  </p>
  <P>
 	<%= f.label :Image%>
@@ -22,3 +22,8 @@
 </p>
 <p><%= f.submit %></p>
 <% end %>
+<script type="text/javascript">	
+	$('#wysiwyg').froalaEditor({
+		
+	});
+</script>

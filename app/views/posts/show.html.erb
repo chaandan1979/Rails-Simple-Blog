@@ -9,8 +9,8 @@
 	<%= image_tag @post.image.url(:medium)  %>
 </p>
 	<% end %>
-<p>
-	<%= @post.content %>
+<p class="froala-view">
+	<%= simple_format(@post.content) %>
 </p>
 <p>
 	Tags: 

@@ -3,6 +3,6 @@
 <% if @post.image.url(:medium) %>
 <p><b>Image</b>:<%= image_tag @post.image.url(:medium), alt:'' %></p>
 <% end %>
-<p><b>Content</b>:<%= @post.content%></p>
+<p><b>Content</b>:<%= simple_format(@post.content)%></p>
 <p><b>Publish</b>:<%= status_converter(@post.publish) %></p>
 <p><b>Created</b>:<%= time_ago(@post.created_at) %></p>

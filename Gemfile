@@ -34,6 +34,10 @@ gem 'paperclip', '~> 6.0.0'
 gem 'aws-sdk', '~> 3'
 
 gem 'recaptcha'
+gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
+gem 'rails-ujs', '~> 0.1.0'
+gem "wysiwyg-rails"
+gem "font-awesome-rails"
 
 
 # Use ActiveStorage variant

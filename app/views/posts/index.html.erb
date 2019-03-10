@@ -11,7 +11,7 @@
 	<%= time_ago post.created_at %>
 </p>
 <p>
- <%= truncate(post.content, length: 104, separator: '')%> <%= link_to 'Read More', post_path(post) %>
+ <%= truncate(strip_tags(post.content), length: 104, separator: '')%> <%= link_to 'Read More', post_path(post) %>
 </p>
 <% if Setting.tag_visible? %>
 	<p>Tags:
