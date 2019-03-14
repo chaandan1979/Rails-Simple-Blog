@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>New Comment posted by, <%= @visitor.fullname %></h1>
+    <p>
+      <%= @visitor.fullname %> posted comment on your blog,
+      your blog is: <%= @post.title %>.<br>
+    </p>
+    <p>
+      To see the comment, just follow this link: <%= @url %>.
+    </p>
+    <p>Thanks for sawthe mail and have a great day!</p>
+  </body>
+</html>

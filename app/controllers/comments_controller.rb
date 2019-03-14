@@ -12,7 +12,11 @@ class CommentsController < ApplicationController
     end
 
   	if verify_recaptcha(model: visitor) && visitor.save
-  		flash[:notice] = "Successfully created new comment"
+       respond_to do |format|
+        MessagepostmailerMailer.messagepost_email(visitor,visitor_comments_params[:comments_attributes]['0'][:post_id]).deliver_later
+        format.html { flash[:notice] = "Successfully created new comment" }
+       end
+  		
   	else
   		flash[:alert] = "there was a problem creating your comment"
   	end  
